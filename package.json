@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build": "webpack --verbose",
-    "watch": "npm run build -- --watch",
-    "debug": "npm run build -- --env.debug=1"
+    "build:watch": "npm run build -- --watch",
+    "build:log": "npm run build -- --env.foo=1 --env.bar=2"
   },
   "devDependencies": {
     "webpack": "^3.3.0",

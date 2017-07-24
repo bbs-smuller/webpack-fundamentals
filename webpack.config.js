@@ -1,13 +1,7 @@
-const Path = require('path');
+const commonConfig = require('./build-utils/webpack.common');
 
 module.exports = (env) => {
 	console.log('Webpack ENV', env);
 
-	return {
-		entry: './src/',
-		output: {
-			filename: '[chunkhash].bundle.js',
-			path: Path.join(__dirname, 'dist')
-		}
-	};
+	return commonConfig;
 };

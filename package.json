@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack --verbose",
+    "watch": "npm run build -- --watch",
+    "debug": "npm run build -- --env.debug=1"
   },
   "devDependencies": {
     "webpack": "^3.3.0",
